@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="smallBoxOne">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box_buttons">
+            <button class="edit">Edit</button>
+            <button class="style">Style</button>
+        </div>
+        <div class="smallBoxTwo">
+            <div class="box_edit">
+                <div class="text_area">
+                    <textarea cols="90" rows="10"></textarea>
+                    <div class="tab"></div>
+                </div>
+                <div class="edit_buttons">
+                    <form>
+                        <button type="button" class="add">Add</button>
+                    </form>
+                    <button class="save">Save</button>
+                </div>
+            </div>
+            <div class="box_style">
+                <p>Font Size:</p>
+                <form name="fontSize">
+                    <input checked type="radio" name="font" value="12px">12px
+                    <input type="radio" name="font" value="14px">14px
+                    <input type="radio" name="font" value="16px">16px
+                    <input type="radio" name="font" value="18px">18px
+                    <input type="radio" name="font" value="20px">20px
+                </form>
+                <p>Font Femily:</p>
+                <form name="fontFamily">
+                    <select>
+                        <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                        <option value="'Times New Roman', Times, serif">Times New Roman</option>
+                    </select>
+                </form>
+                <p>Colors:</p>
+                <form name="colors">
+                    <div class="main_colors_box">
+                        <div class="buttons_of_txt">
+                            <button type="reset" class="colorOfText">Color of Text</button>
+                            <button type="reset" class="colorOfBackground">Background color</button>
+                        </div>
+                        <div class="txtColor">
+                            <div class="red"></div>
+                            <div class="yellow"></div>
+                            <div class="black"></div>
+                            <div class="white"></div>
+                            <div class="green"></div>
+                            <div class="orange"></div>
+                            <div class="gold"></div>
+                            <div class="rose"></div>
+                            <div class="purple"></div>
+                        </div>
+                        <div class="bgColor">
+                            <div class="red"></div>
+                            <div class="yellow"></div>
+                            <div class="black"></div>
+                            <div class="white"></div>
+                            <div class="green"></div>
+                            <div class="orange"></div>
+                            <div class="gold"></div>
+                            <div class="rose"></div>
+                            <div class="purple"></div>
+                        </div>
+                    </div>
+                </form>
+                <p>Style text:</p>
+                <form name="style">
+                    <input type="checkbox" class="cursive" name="cursive">Cursive
+                    <input type="checkbox" class="bold" name="bold">Bold
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main_container2">
+        <h2>Choose what you want:</h2>
+        <form name="choose_form">
+            <input type="radio" name="main" class="table">table
+            <input type="radio" name="main" class="list">list
+        </form>
+        <div class="table_box">
+            <span>Count TR:</span>
+            <input type="text" class="set count_tr" placeholder="Count TR"> <br>
+            <span>Count TD:</span>
+            <input type="text" class="set count_td" placeholder="Count TD">
+            <h4 style="margin-top: 10px;">Add style to your table:</h4>
+            <span>Width of TD:</span>
+            <input type="text" class="set width_td" placeholder="Width of TD"> <br>
+            <span>Height of TD:</span>
+            <input type="text" class="set height_td" placeholder="Heigth of TD"> <br>
+            <span>Width of border:</span>
+            <input type="text" class="chus width_bd" placeholder="Width">
+            <span>Type of border:</span>
+            <select class="chus bd_style">
+                <option value="solid">solid</option>
+                <option value="double">double</option>
+            </select>
+            <span>Color of border:</span>
+            <select class="chus bd_color">
+                <option value="black">black</option>
+                <option value="red">red</option>
+            </select><br>
+            <button class="create_table">Create table</button>
+            <div class="create_table_box"></div>
+        </div>
+        <div class="list_box">
+            <span>Count Li:</span>
+            <input type="text" class="count_li" placeholder="Count Li">
+            <br>
+            <span>Type of marks:</span>
+            <select class="sel_mar">
+                <option value="disk">disk</option>
+                <option value="circle">circle</option>
+                <option value="square">square</option>
+            </select>
+            <button class="create_list">Create list</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
